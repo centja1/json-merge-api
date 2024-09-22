@@ -1,0 +1,9 @@
+services:
+  server:
+    build:
+      context: .
+    init: true
+    volumes:
+      - ./files:/config
+    ports:
+      - 3000:3000
